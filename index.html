@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="totalContainer">
+
+
+        <h1>Terms & Definitions into Flashcards</h1>
+        <div class="inputTerm">
+            <h3>Term</h3>
+            <input type="text" id="term" placeholder="Enter the Term Here">
+            <h3>Definition</h3>
+            <textarea id="definition" placeholder="Enter the Term Here"></textarea>
+        </div>
+
+
+        <div class="buttons">
+            <button class="submit" id="saveTerm" onclick="saveTerms()">Save Term</button>
+            <button id="genertate" class="genertate" onclick="generateFlash()">Generate Flashcards</button>
+            <button id="clear" class="clear" onclick="clearInputs()">Clear All</button>
+        </div>
+
+
+        <div id="outputFlash" class="outputFlash">
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
